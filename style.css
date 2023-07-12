@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  font-size: 16px;
+  color: black;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(35, 15, 60, 0.9754026610644257) 18%,
+    rgba(15, 15, 27, 1) 100%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* Header && Navbar */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  align-items: center;
+  color: gray;
+}
+
+header h1 {
+  font-family: "Roboto Slab", serif;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  list-style: none;
+  gap: 18px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: cyan;
+  font-family: "Roboto Slab", serif;
+  font-size: 18px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: white;
+    transition: all 0.3s ease-in-out;
+}
+
+/* main */
+
+main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  color: white;
+  min-height: 100vh;
+}
+
+form {
+    position: relative;
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+    top: 140px;
+}
+
+form textarea {
+    width: 800px;
+    height: 46px;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    resize: none;
+    font-family: "Roboto Slab", serif;
+    font-size: 18px;
+    font-weight: 500;
+    resize: none;
+    overflow: auto;
+
+    background-color: cyan;
+}
