@@ -12,31 +12,66 @@
   </head>
   <body>
     <header>
-      <h1 class="heading">myGPT</h1>
+      <h1 class="heading">myImage</h1>
       <nav>
         <ul>
           <li><a href="#">Home</a></li>
-          <li><a href="#">About us</a></li>
-          <li><a href="#">Contact us</a></li>
+          <li><a href="./pages/aboutUs/aboutUs.html">About</a></li>
+          <li><a href="./pages/contact/contact.html">Contact us</a></li>
         </ul>
       </nav>
     </header>
     <main>
-      <form action="">
+      <!-- Content -->
+
+      <div class="content">
+        <div class="content_p">
+          <h1>Generate images from text</h1>
+          <p>
+            Enter a text prompt and select an AI model to generate images from
+            text. Get your preffered api key by visiting the links below.
+          </p>
+          <p class="apiLinks">
+            <a
+              href="https://stablediffusionapi.com/settings/api"
+              target="_blank"
+              >Stable Diffusion</a
+            >
+            <a href="">Open AI</a>
+          </p>
+        </div>
+
+        <div class="imagesDisplay"></div>
+      </div>
+
+      <!-- Display images -->
+
+      <div class="imgContainer"></div>
+
+      <!-- Input area -->
+      <form>
         <div class="apiContainer">
-          <label for="input">Enter your Open AI API key here</label>
-          <input type="text" name="key" id="key" />
+          <select name="aiSelect" id="aiSelect">
+            <option value="default">select</option>
+            <option value="openAi">Open AI</option>
+            <option value="stableDiffusion">Stable Diffusion</option>
+          </select>
+
+          <div class="apiKeyContainer">
+            <label for="input">Enter your API key here :</label>
+            <input type="text" name="key" id="key" />
+          </div>
         </div>
 
         <div class="textarea">
           <textarea
-            placeholder="Enter your text here"
+            placeholder="Enter text prompt here"
             name="input"
             id="input"
             cols="60"
             rows="1"
           ></textarea>
-          <button type="submit">
+          <button type="submit" id="submit">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 16 16"
@@ -55,5 +90,6 @@
     </main>
     <footer></footer>
     <script></script>
+    <script type="module" src="script.js"></script>
   </body>
 </html>
