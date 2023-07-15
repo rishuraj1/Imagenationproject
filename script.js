@@ -123,6 +123,7 @@ getOut.addEventListener("click", async function (e) {
                 .catch(error => console.log('error', error));
 
         } else {
+            e.preventDefault();
             alert("Please select a model.");
         }
     } catch (error) {
