@@ -37,8 +37,10 @@
               target="_blank"
               >Stable Diffusion</a
             >
-            <a href="">Open AI</a>
           </p>
+          <div class="loader">
+            <img src="./assets/loader.svg" alt="loader" />
+          </div>
         </div>
 
         <div class="imagesDisplay"></div>
@@ -51,15 +53,9 @@
       <!-- Input area -->
       <form>
         <div class="apiContainer">
-          <select name="aiSelect" id="aiSelect">
-            <option value="default">select</option>
-            <option value="openAi">Open AI</option>
-            <option value="stableDiffusion">Stable Diffusion</option>
-          </select>
-
           <div class="apiKeyContainer">
             <label for="input">Enter your API key here :</label>
-            <input type="text" name="key" id="key" />
+            <input type="text" name="key" id="key" required />
           </div>
         </div>
 
@@ -70,6 +66,7 @@
             id="input"
             cols="60"
             rows="1"
+            required
           ></textarea>
           <button type="submit" id="submit">
             <svg
@@ -85,13 +82,16 @@
               ></path>
             </svg>
           </button>
+          <div class="imgLoader">
+            <span class="bounce1">.</span>
+            <span class="bounce2">.</span>
+            <span class="bounce3">.</span>
+          </div>
         </div>
       </form>
     </main>
     <footer>
-
       <!-- Footer goes here -->
-
     </footer>
     <script></script>
     <script type="module" src="script.js"></script>
