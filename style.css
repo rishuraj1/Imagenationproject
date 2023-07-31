@@ -259,6 +259,10 @@ form textarea {
   background-color: cyan;
 }
 
+.responsiveImagesDisplay {
+  display: none;
+}
+
 .apiContainer {
   display: flex;
   justify-content: center;
@@ -270,7 +274,7 @@ form textarea {
 }
 
 .apiContainer input {
-  width: 300px;
+  width: 450px;
   height: 30px;
   padding: 10px;
   border-radius: 5px;
@@ -319,7 +323,6 @@ form textarea {
   cursor: pointer;
 }
 
-
 /* err */
 
 .err {
@@ -331,4 +334,82 @@ form textarea {
   width: 100%;
   height: 100%;
   color: #353535;
+}
+
+@media only screen and (max-width: 768px) {
+  .content_p .apiLinks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 4px;
+    width: 100%;
+    height: 100%;
+  }
+
+  .imgContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+  }
+
+  .apiKeyContainer input {
+    width: 400px;
+  }
+
+  .textarea {
+    width: 650px;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  body {
+    padding: 20px;
+  }
+
+  header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    color: gray;
+    padding: 20px;
+  }
+
+  main {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    height: 100%;
+  }
+
+  .responsiveImagesDisplay {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+    padding: 10px;
+    background: cyan;
+  }
+
+  .responsiveImagesDisplay img {
+    object-fit: fill;
+    cursor: pointer;
+  }
+
+  .imagesDisplay {
+    display: none;
+  }
 }

@@ -14,6 +14,9 @@ async function getImages() {
     const result = await data.json();
     console.log(result);
     let images = result.photos;
+    let responsiveImages = images.slice(0, 6);
+
+    //tablet and laptop
     images = images.slice(0, 16);
     const parent = document.querySelector(".imagesDisplay");
     images.forEach((photo) => {
@@ -24,6 +27,18 @@ async function getImages() {
             window.open(photo?.src.original);
         };
         parent.appendChild(img);
+    });
+
+    //mobile
+    const parent2 = document.querySelector(".responsiveImagesDisplay");
+    responsiveImages.forEach((photo) => {
+        const img = document.createElement("img");
+        img.src = photo?.src.small;
+        img.title = photo?.alt;
+        img.onclick = function () {
+            window.open(photo?.src.original);
+        };
+        parent2.appendChild(img);
     });
 }
 
@@ -64,24 +79,6 @@ getOut.addEventListener("click", async function (e) {
             "width": "512",
             "height": "512",
             "samples": "1",
-            // "num_inference_steps": "30",
-            // "safety_checker": "no",
-            // "enhance_prompt": "yes",
-            // "seed": null,
-            // "guidance_scale": 7.5,
-            // "multi_lingual": "no",
-            // "panorama": "no",
-            // "self_attention": "no",
-            // "upscale": "no",
-            // "embeddings_model": null,
-            // "lora_model": null,
-            // "tomesd": "yes",
-            // "use_karras_sigmas": "yes",
-            // "vae": null,
-            // "lora_strength": null,
-            // "scheduler": "UniPCMultistepScheduler",
-            // "webhook": null,
-            // "track_id": null
         });
 
         let requestOptions = {
@@ -158,4 +155,12 @@ function displayStableDiffusionImages(result, prompt) {
         imgSection.appendChild(err);
 
     }
+}
+
+
+// Utils
+
+function showMenu () {
+    const menu = document.querySelector(".menu");
+    menu.classList.toggle("showMenu");
 }
