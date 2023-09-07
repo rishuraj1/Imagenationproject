@@ -1,3 +1,4 @@
+import surpriseMePrompts from './utils/prompts.js';
 
 // main page load image
 const apiPexels = "jpwY4q8qaTcPjZyQ9jBPnuWcCbB88mDXUmlwdCZnmH8XZWheCfJuAdxZ";
@@ -160,7 +161,16 @@ function displayStableDiffusionImages(result, prompt) {
 
 // Utils
 
-function showMenu () {
+function showMenu() {
     const menu = document.querySelector(".menu");
     menu.classList.toggle("showMenu");
 }
+
+// Surprise me Button
+
+const surpriseMeBtn = document.querySelector(".surpriseMeBtn");
+surpriseMeBtn.addEventListener("click", function (e) {
+    e.preventDefault();
+    const prompt = surpriseMePrompts[Math.floor(Math.random() * surpriseMePrompts.length)];
+    document.querySelector("#input").value = prompt;
+});

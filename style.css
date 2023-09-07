@@ -230,6 +230,32 @@ main {
   text-decoration: none;
 }
 
+.prompts-key {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.surpriseMeBtn {
+  display: flex;
+  cursor: pointer;
+  background: beige;
+  border: 0;
+  outline: 0;
+  padding: 6px;
+  border-radius: 5px;
+  width: 120px;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.surpriseMeBtn:hover {
+  background: #f1f1f1;
+  transition: all 0.3s ease-in-out;
+}
+
 form {
   position: relative;
   display: flex;

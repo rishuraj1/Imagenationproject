@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>myGPT</title>
+    <title>IMAGENATION</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -11,8 +11,10 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <!-- Header -->
     <header>
       <h1 class="heading">IMAGENATION</h1>
+      <!-- Navigation menu -->
       <nav>
         <ul>
           <li><a href="#">Home</a></li>
@@ -49,10 +51,15 @@
 
       <!-- Input area -->
       <form>
-        <div class="apiContainer">
-          <div class="apiKeyContainer">
-            <label for="input">Enter your API key here :</label>
-            <input type="text" name="key" id="key" required />
+        <div class="prompts-key">
+          <button class="surpriseMeBtn">
+            Surprise me
+          </button>
+          <div class="apiContainer">
+            <div class="apiKeyContainer">
+              <label for="input">Enter your API key here :</label>
+              <input type="text" name="key" id="key" required />
+            </div>
           </div>
         </div>
 
@@ -85,6 +92,7 @@
         </div>
       </form>
     </main>
+    <!-- Footer -->
     <footer>
       <!-- Footer goes here -->
     </footer>
