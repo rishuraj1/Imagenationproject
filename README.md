@@ -3,5 +3,5 @@
 
 
 
-# myGPT
+# Imagenation
 This is a simple web app which harnesses the power of powerful generative AI tools such as Open AI and Stable Diffusion to generate beautiful and stunning piece of art according to your prompt.
