@@ -1,0 +1,111 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  font-size: 16px;
+  color: black;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(35, 15, 60, 0.9754026610644257) 18%,
+    rgba(15, 15, 27, 1) 100%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  align-items: center;
+  color: gray;
+}
+header h1 {
+  font-family: "Roboto Slab", serif;
+  font-size: 40px;
+  font-weight: 700;
+  
+}
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  list-style: none;
+  gap: 18px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: cyan;
+  font-family: "Roboto Slab", serif;
+  font-size: 18px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: white;
+  transition: all 0.3s ease-in-out;
+}
+
+.container {
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 20px;
+    background: aqua;
+    border-radius: 10px;
+  }
+  .container h1{
+    background: linear-gradient(to right, #f32170, #ff6b08, #cf23cf, #eedd44);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    font-family: sans-serif;
+    font-weight: bold;
+  }
+  
+  label {
+    margin-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  input[type="text"],
+  input[type="email"]{
+    padding: 5px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+  }
+
+  textarea{
+    padding: 5px;
+    margin-bottom: 10px;
+    height: 80px;
+    border-radius: 5px;
+
+  }
+  
+  input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 7px;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #08eb41;
+    cursor: pointer;
+  }
+  

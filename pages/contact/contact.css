@@ -1,0 +1,17 @@
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(red, blue);
+}
+
+h1{
+    font: bold;
+    font-size: larger;
+}
