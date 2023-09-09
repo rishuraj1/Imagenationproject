@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IMAGENATION</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <h1 class="heading">IMAGENATION</h1>
+      <!-- Navigation menu -->
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="./pages/aboutUs/aboutUs.html">About</a></li>
+          <li><a href="./pages/contact/contact.html">Contact us</a></li>
+          <li><a href="./Feedback/first.html">Feedback</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <!-- Content -->
+
+      <div class="content">
+        <div class="content_p">
+          <h1>Generate images from text</h1>
+          <p>
+            Enter a text prompt and select an AI model to generate images from
+            text. Get your api key by visiting the Stable Diffusion link below.
+          </p>
+          <p class="apiLinks">
+            <a
+              href="https://stablediffusionapi.com/settings/api"
+              target="_blank"
+              >Stable Diffusion</a
+            >
+          </p>
+        </div>
+        <div class="imagesDisplay"></div>
+        <div class="responsiveImagesDisplay"></div>
+      </div>
+
+      <!-- Display images -->
+
+      <div class="imgContainer"></div>
+
+      <!-- Input area -->
+      <form>
+        <div class="prompts-key">
+          <button class="surpriseMeBtn">
+            Surprise me
+          </button>
+          <div class="apiContainer">
+            <div class="apiKeyContainer">
+              <label for="input">Enter your API key here :</label>
+              <input type="text" name="key" id="key" required />
+            </div>
+          </div>
+        </div>
+
+        <div class="textarea">
+          <textarea
+            placeholder="Enter text prompt here"
+            name="input"
+            id="input"
+            cols="60"
+            rows="1"
+            required
+          ></textarea>
+          <button type="submit" id="submit">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 16 16"
+              fill="none"
+              class="h-4 w-4 m-1 md:m-0"
+              stroke-width="2"
+            >
+              <path
+                d="M.5 1.163A1 1 0 0 1 1.97.28l12.868 6.837a1 1 0 0 1 0 1.766L1.969 15.72A1 1 0 0 1 .5 14.836V10.33a1 1 0 0 1 .816-.983L8.5 8 1.316 6.653A1 1 0 0 1 .5 5.67V1.163Z"
+                fill="currentColor"
+              ></path>
+            </svg>
+          </button>
+          <div class="imgLoader">
+            <img src="./assets/loader.svg" alt="loading" title="loading" />
+          </div>
+        </div>
+      </form>
+    </main>
+    <!-- Footer -->
+    <footer>
+      <!-- Footer goes here -->
+    </footer>
+    <script></script>
+    <script type="module" src="script.js"></script>
+  </body>
+</html>
