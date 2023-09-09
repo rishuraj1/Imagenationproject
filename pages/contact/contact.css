@@ -32,6 +32,7 @@ input {
   outline: none;
   text-align: center;
   background-color: cyan;
+  font: 700;
 }
 
 /* Add a background color and some padding around the form */
@@ -41,6 +42,7 @@ input {
   flex-direction: column;
   align-items: center;
   border-radius: 5px;
+  width: 70%;
   padding: 10px;
   background-color: slategray;
 }
@@ -109,43 +111,37 @@ button:hover {
   color: beige;
 }
 
-.team {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 10px;
-  gap: 10px;
-  border-radius: 5px;
-  background-color: slategrey;
-  flex-wrap: wrap;
+h2 {
+  font: 700;
+  font-size: 17px;
+  color: cyan;
 }
 
-.members {
+/* contact */
+
+.contact {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   gap: 10px;
   padding: 10px;
   border-radius: 5px;
   width: 70%;
-  background-color: slategrey;
-  flex-wrap: wrap;
+  margin-top: 30px;
+  background-color: slategray;
 }
 
-.member {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  gap: 10px;
+ul{
+  list-style-type: none;
 }
 
-.member1 img {
-  border-radius: 50%;
-  background-color: beige;
+.github {
+  width: 43px;
+  height: 43px;
+  transition: all ease-in-out 0.3s;
+  cursor: pointer;
 }
 
-.team-title {
-  font: 700;
-  font-size: 30px;
-  color: beige;
+.github:hover {
+  transform: scale(1.2);
 }
