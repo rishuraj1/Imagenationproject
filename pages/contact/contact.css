@@ -1,17 +1,151 @@
 main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-main div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: linear-gradient(red, blue);
+h1 {
+  font: bold;
+  font-size: larger;
 }
 
-h1{
-    font: bold;
-    font-size: larger;
+.your-name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  fill: cyan;
+}
+
+input {
+  width: 320px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  outline: none;
+  text-align: center;
+  background-color: cyan;
+}
+
+/* Add a background color and some padding around the form */
+.container_contact {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: slategray;
+}
+
+.dual-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+  padding: 10px;
+}
+
+.left-container {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.your-message {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+
+.input-message {
+  width: 320px;
+  height: 100px;
+  padding: 5px;
+  border-radius: 4px;
+  outline: none;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+button {
+  width: 100px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  outline: none;
+  text-align: center;
+  background-color: cyan;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  font-weight: 700;
+  font-size: 15px;
+}
+
+button:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.feedback-title {
+  font: 700;
+  font-size: 30px;
+  color: beige;
+}
+
+.team {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  gap: 10px;
+  border-radius: 5px;
+  background-color: slategrey;
+  flex-wrap: wrap;
+}
+
+.members {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  width: 70%;
+  background-color: slategrey;
+  flex-wrap: wrap;
+}
+
+.member {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+.member1 img {
+  border-radius: 50%;
+  background-color: beige;
+}
+
+.team-title {
+  font: 700;
+  font-size: 30px;
+  color: beige;
 }
