@@ -32,21 +32,27 @@
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: start;
-  gap: 50px;
+  gap: 40px;
   margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .member {
   display: flex;
   align-items: start; 
   justify-content: center;
-  gap: 10px;
+  gap: 4px;
   text-align: start;
 }
 
 .member1 img {
   border-radius: 50%;
   background-color: beige;
+}
+
+.member img {
+  border-radius: 50%;
+  background-color: cyan;
 }
 
 .team-title {
@@ -61,4 +67,41 @@
   flex-direction: column;
   justify-content: start;
   align-items: start;
+  text-align: center;
+}
+
+.member-socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+}
+
+.linkedin-icon:hover {
+  fill: #0076a8;
+  transition: all 0.2s ease-in-out;
+}
+
+.github-icon:hover {
+  fill: black;
+  transition: all 0.2s ease-in-out;
+}
+
+.mail-icon:hover {
+  fill: white;
+  transition: all 0.2s ease-in-out;
+}
+
+.link-icon:hover {
+  fill: blue;
+  transition: all 0.2s ease-in-out;
+}
+
+.icon{
+  fill: beige;
+}
+
+.icon:hover {
+  transition: all 0.2s ease-in-out;
+  transform: scale(1.2);
 }
