@@ -95,6 +95,7 @@ main {
   flex-direction: column;
 }
 
+
 .content_p h1 {
   background: linear-gradient(to right, #f32170, #ff6b08, #cf23cf, #eedd44);
   -webkit-text-fill-color: transparent;
@@ -121,7 +122,7 @@ main {
   height: 100%;
 }
 
-.apiLinks a {
+/* .apiLinks li a {
   color: cyan;
   font-family: "Roboto Slab", serif;
   font-size: 18px;
@@ -130,7 +131,22 @@ main {
   text-decoration: none;
 }
 
-.apiLinks a:hover {
+.apiLinks li a:hover {
+  color: white;
+  transition: all 0.3s ease-in-out;
+  text-decoration: underline;
+} */
+
+.api-link a {
+  color: cyan;
+  font-family: "Roboto Slab", serif;
+  font-size: 18px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.api-link a:hover {
   color: white;
   transition: all 0.3s ease-in-out;
   text-decoration: underline;
