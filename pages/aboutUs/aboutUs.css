@@ -29,17 +29,18 @@
 
 .members {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
   flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: start;
-  gap: 40px;
-  margin-top: 10px;
+  width: 85%;
+  gap: 20px;
+  margin-top: 20px;
   margin-bottom: 10px;
 }
 
 .member {
   display: flex;
-  align-items: start; 
+  align-items: start;
   justify-content: center;
   gap: 4px;
   text-align: start;
@@ -60,7 +61,6 @@
   font-size: 30px;
   color: beige;
 }
-
 
 .about-member {
   display: flex;
@@ -97,11 +97,19 @@
   transition: all 0.2s ease-in-out;
 }
 
-.icon{
+.icon {
   fill: beige;
 }
 
 .icon:hover {
   transition: all 0.2s ease-in-out;
   transform: scale(1.2);
+}
+
+.member-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 20px;
 }
